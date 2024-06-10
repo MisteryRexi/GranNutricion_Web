@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Gran Nutrición</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Gran Nutrición</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/menu.png" alt="" class="menu-icon">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="infoGN.html">Información</a></li>
+                    <li><a href="producGN.html">Producto</a></li>
+                    <li><a href="contacGN.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="header-content container">
+
+            <div class="header-txt">
+                <h1><span>Bienvenidos</span> disfruta de una deliciosa comida</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium optio, 
+                    magnam eveniet, voluptatibus earum sunt, quae quis dicta nisi vel labore ipsum? 
+                    Iure dolor nam debitis ipsum nihil nesciunt tempora.
+                </p>
+                <a href="infoGN.html" class="btn-1">Informacion</a>
+            </div>
+            <div class="header-img">
+                <img src="img/pr2.png" alt="">
+            </div>
+
+        </div>
+
+    <div class="swiper mySwiper">
+        
+        <div class="swiper-txt">
+            <h1><span>Productos destacados</span></h1>
+        </div>
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="product-content">
+                    <div class="product-txt">
+                        <p class="precio"><span>$200</span></p>
+                        <h3>NOMBRE DEL PRODUCTO</h3>
+                        <p>
+                            DESCRIPCION DEL PORDUCTO
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam laborum amet 
+                            porro molestiae optio dolorum, ea nam non accusamus? 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="img/f1.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="2">Comprar</a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="product-content">
+                    <div class="product-txt">
+                        <p class="precio"><span>$100</span></p>
+                        <h3>NOMBRE DEL PRODUCTO</h3>
+                        <p>
+                            DESCRIPCION DEL PORDUCTO
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam laborum amet 
+                            porro molestiae optio dolorum, ea nam non accusamus? 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="img/f2.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="1">Comprar</a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="product-content">
+                    <div class="product-txt">
+                        <p class="precio"><span>$300</span></p>
+                        <h3>NOMBRE DEL PRODUCTO</h3>
+                        <p>
+                            DESCRIPCION DEL PORDUCTO
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam laborum amet 
+                            porro molestiae optio dolorum, ea nam non accusamus? 
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="img/f3.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="3">Comprar</a>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "coverflow", 
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    loop: true,
+                    coverflowEffect: {
+                        depth:500,
+                        modifer:1,
+                        slidesShadowa: true,
+                        rotate: 0,
+                        stretch: 0
+                    }
+                })
+            </script>
+    </div>
+
+    <main class="productosGN container">
+        <h2>Productos</h2>
+        <div class="box-container" id="lista-1">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/f1.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 1</h3>
+                    <p>Descripción del producto 1</p>
+                    <p class="precio">$100</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="1">Comprar</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/f3.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 2</h3>
+                    <p>Descripción del producto 2</p>
+                    <p class="precio">$150</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="2">Comprar</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/f4.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 3</h3>
+                    <p>Descripción del producto 3</p>
+                    <p class="precio">$100</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="3">Comprar</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/f1.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 4</h3>
+                    <p>Descripción del producto 2</p>
+                    <p class="precio">$150</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="4">Comprar</a>
+            </div>
+            <!-- Agrega más productos aquí, inicialmente ocultos -->
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f2.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 5</h3>
+                    <p>Descripción del producto 5</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="5">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f3.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 6</h3>
+                    <p>Descripción del producto 6</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="6">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f4.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 7</h3>
+                    <p>Descripción del producto 7</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="7">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f1.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 8</h3>
+                    <p>Descripción del producto 8</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="8">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f3.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 9</h3>
+                    <p>Descripción del producto 9</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="9">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f1.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 10</h3>
+                    <p>Descripción del producto 10</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="10">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f4.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 11</h3>
+                    <p>Descripción del producto 11</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="11">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f1.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 12</h3>
+                    <p>Descripción del producto 12</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="12">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f2.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 13</h3>
+                    <p>Descripción del producto 13</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="13">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f3.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 14</h3>
+                    <p>Descripción del producto 14</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="14">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f4.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 15</h3>
+                    <p>Descripción del producto 15</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="15">Comprar</a>
+            </div>
+            <div class="box hidden">
+                <div class="box-img">
+                    <img src="img/f1.png" alt="">
+                </div>
+                <div class="productosGN-txt">
+                    <h3>Producto 16</h3>
+                    <p>Descripción del producto 16</p>
+                    <p class="precio">$300</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-3" data-id="16">Comprar</a>
+            </div>
+            <!-- Más productos ocultos... -->
+        </div>
+        <div class="btn-2" id="load-more">Cargar más</div>
+        <div class="btn-4 hidden" id="show-less">Mostrar menos</div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Colaboradores</h3>
+                <ul>
+                    <li><a href="#">NOMBRE COLABORADOR</a></li>
+                    <li><a href="#">NOMBRE COLABORADOR</a></li>
+                    <li><a href="#">NOMBRE COLABORADOR</a></li>
+                    <li><a href="#">NOMBRE COLABORADOR</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Diseñadores</h3>
+                <ul>
+                    <li><a href="#">NOMBRE DISEÑADOR</a></li>
+                    <li><a href="#">NOMBRE DISEÑADOR</a></li>
+                    <li><a href="#">NOMBRE DISEÑADOR</a></li>
+                    <li><a href="#">NOMBRE DISEÑADOR</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scriptGN.js"></script>
+</body>
+</html>
